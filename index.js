@@ -5,7 +5,7 @@ const path = require('path');
 app.use(express.json()); 
 
 app.use(express.static(__dirname + "/public"));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/index.js')))
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/index.js')));
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");  
