@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 
 // 2. create schema for entity
 const postSchema = new mongoose.Schema({
-  username: { type: String, unique: true, required: true},
-  password: { type: String, required: true},
-  email: [String],
-  userid: [String]
+  posttype: { type: String, unique: true, required: true},
+  postid: { type: Int16Array, required: true},
+  userid: [Int16Array],
+  commentid: [Int16Array]
 })
 
 
