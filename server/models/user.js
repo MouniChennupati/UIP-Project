@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
   username: { type: String, unique: true, required: true},
   password: { type: String, required: true},
   email: [String],
-  userid: [String]
+  userid: [Int16Array]
 })
 
 // 3. create model of schema
